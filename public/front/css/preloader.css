@@ -1,0 +1,176 @@
+@-webkit-keyframes pulsate {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@-moz-keyframes pulsate {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@-o-keyframes pulsate {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes pulsate {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@-webkit-keyframes move {
+    to {
+        stroke-dashoffset: -1200;
+    }
+}
+@-moz-keyframes move {
+    to {
+        stroke-dashoffset: -1200;
+    }
+}
+@-o-keyframes move {
+    to {
+        stroke-dashoffset: -1200;
+    }
+}
+@keyframes move {
+    to {
+        stroke-dashoffset: -1200;
+    }
+}
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@-o-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-animation-duration: 80s;
+    -moz-animation-duration: 80s;
+    -o-animation-duration: 80s;
+    animation-duration: 80s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulsate;
+    -moz-animation-name: pulsate;
+    -o-animation-name: pulsate;
+    animation-name: pulsate;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+}
+.loader svg {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.animation {
+    fill: none;
+    stroke: #39FF14;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+    opacity: 1;
+    stroke-dasharray: 600;
+    -webkit-animation: move 5s linear forwards infinite, fade 5s linear infinite;
+    animation: move 5s linear forwards infinite, fade 5s linear infinite;
+}
